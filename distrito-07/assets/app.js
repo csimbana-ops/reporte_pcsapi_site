@@ -42,6 +42,10 @@ function averageScore(rows) {
   return scores.reduce((sum, score) => sum + score, 0) / scores.length;
 }
 
+function formatScore(value) {
+  return Number.isFinite(value) ? value.toFixed(1) : "N/A";
+}
+
 function passAverageScore(rows) {
   return averageScore(
     rows.filter((row) => String(row.veredicto || "").trim().toUpperCase() === "PASS")
@@ -269,15 +273,20 @@ function renderSummary(summary, locations = []) {
     : Number(summary.average_score ?? 0);
   const passScore = weightedAverage("passScoreAverage", "pass_count");
   const failScore = weightedAverage("failScoreAverage", "fail_count");
+  const passPct = percentage(pass, total);
+  const failPct = percentage(fail, total);
 
   document.getElementById("totalLocations").textContent = summary.total_locations ?? 0;
   document.getElementById("totalPizzas").textContent = total;
   document.getElementById("avgScore").textContent = `${districtScore.toFixed(1)}%`;
   document.getElementById("passFail").textContent = `${pass} / ${fail}`;
-  document.getElementById("passFailPct").innerHTML =
-    `Score PASS: ${Number.isFinite(passScore) ? passScore.toFixed(1) : "N/A"}%<br>` +
-    `Score FAIL: ${Number.isFinite(failScore) ? failScore.toFixed(1) : "N/A"}%`;
-  document.getElementById("passRate").textContent = `${percentage(pass, total).toFixed(1)}%`;
+  document.getElementById("passFailPct").textContent = "Pizzas PASS / FAIL";
+  document.getElementById("passRate").innerHTML = `
+    <div class="score-breakdown">
+      <div><strong>PASS ${passPct.toFixed(1)}%</strong><span>Puntaje ${formatScore(passScore)}</span></div>
+      <div><strong>FAIL ${failPct.toFixed(1)}%</strong><span>Puntaje ${formatScore(failScore)}</span></div>
+    </div>
+  `;
 }
 
 function polarPoint(cx, cy, radius, angle) {

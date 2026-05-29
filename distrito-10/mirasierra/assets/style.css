@@ -105,6 +105,29 @@ p {
   word-break: break-word;
 }
 
+.score-breakdown {
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.score-breakdown div {
+  display: grid;
+  gap: 2px;
+}
+
+.score-breakdown strong {
+  font-size: 16px;
+  color: var(--text);
+}
+
+.score-breakdown span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+
 .subvalue {
   margin-top: 6px;
   color: var(--muted);

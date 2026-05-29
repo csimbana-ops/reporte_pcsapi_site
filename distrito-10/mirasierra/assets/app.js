@@ -38,6 +38,20 @@ function percentage(value, total) {
   return total ? (value / total) * 100 : 0;
 }
 
+function averageRowScore(rows) {
+  const scores = rows
+    .map((row) => Number(row.score))
+    .filter((score) => Number.isFinite(score));
+
+  return scores.length
+    ? scores.reduce((sum, score) => sum + score, 0) / scores.length
+    : NaN;
+}
+
+function formatScore(value) {
+  return Number.isFinite(value) ? value.toFixed(1) : "N/A";
+}
+
 function titleCase(text) {
   return String(text || "")
     .replace(/[_-]+/g, " ")
@@ -269,8 +283,10 @@ function highlightSeries(values, baseColor, highlightColor) {
 
 function buildMetrics(detailedData) {
   const total = detailedData.length;
-  const pass = detailedData.filter((x) => x.veredicto === "PASS").length;
-  const fail = total - pass;
+  const passRows = detailedData.filter((x) => String(x.veredicto || "").trim().toUpperCase() === "PASS");
+  const failRows = detailedData.filter((x) => String(x.veredicto || "").trim().toUpperCase() === "FAIL");
+  const pass = passRows.length;
+  const fail = failRows.length;
   const burbuja = detailedData.filter((x) => x.burbuja === "si").length;
   const grasa = detailedData.filter((x) => x.grasa === "si").length;
   const bordes = detailedData.filter((x) => x.bordes_sucios === "si").length;
@@ -281,6 +297,8 @@ function buildMetrics(detailedData) {
     total,
     pass,
     fail,
+    passScore: averageRowScore(passRows),
+    failScore: averageRowScore(failRows),
     burbuja,
     grasa,
     bordes,
@@ -300,8 +318,12 @@ function renderSummary(rankingData, metrics) {
   document.getElementById("csvName").textContent = ctx.location || ctx.display || "-";
   document.getElementById("avgScore").textContent = rankingData.average_score ?? 0;
   document.getElementById("passFailKpi").textContent = `${metrics.pass} / ${metrics.fail}`;
-  document.getElementById("passRateKpi").textContent =
-    `${percentage(metrics.pass, metrics.total).toFixed(1)}%`;
+  document.getElementById("passRateKpi").innerHTML = `
+    <div class="score-breakdown">
+      <div><strong>PASS ${percentage(metrics.pass, metrics.total).toFixed(1)}%</strong><span>Puntaje ${formatScore(metrics.passScore)}</span></div>
+      <div><strong>FAIL ${percentage(metrics.fail, metrics.total).toFixed(1)}%</strong><span>Puntaje ${formatScore(metrics.failScore)}</span></div>
+    </div>
+  `;
   document.getElementById("totalPizzasKpi").textContent = String(metrics.total);
   document.getElementById("passCountLabel").textContent = String(metrics.pass);
   document.getElementById("failCountLabel").textContent = String(metrics.fail);
