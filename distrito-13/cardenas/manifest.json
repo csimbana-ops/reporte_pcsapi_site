@@ -1,0 +1,9 @@
+{
+  "datasets": [
+    {
+      "csv_name": "Distrito 13 - Cardenas.csv",
+      "detailed_json": "./json/detailed.json",
+      "ranking_json": "./json/ranking.json"
+    }
+  ]
+}

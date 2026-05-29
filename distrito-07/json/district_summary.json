@@ -1,0 +1,13 @@
+{
+  "company": "PCSAPI",
+  "district_slug": "distrito-07",
+  "display_name": "Distrito 07",
+  "total_locations": 2,
+  "total_pizzas": 474,
+  "average_score": 70.41,
+  "pass_count": 356,
+  "fail_count": 118,
+  "burbuja_count": 33,
+  "grasa_count": 122,
+  "bordes_count": 258
+}

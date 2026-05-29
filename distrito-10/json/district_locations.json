@@ -1,0 +1,202 @@
+{
+  "locations": [
+    {
+      "location": "Jardines De Analco",
+      "location_slug": "jardines-de-analco",
+      "relative_url": "./jardines-de-analco/",
+      "average_score": 71.44,
+      "total_pizzas": 59,
+      "pass_count": 45,
+      "fail_count": 14,
+      "burbuja_count": 3,
+      "grasa_count": 22,
+      "bordes_count": 24,
+      "best_item": {
+        "score": 85,
+        "veredicto": "PASS",
+        "crop_image": "./jardines-de-analco/crops/Distrito 10 - Jardines de Analco_img_0017_crop_02.jpg"
+      },
+      "worst_item": {
+        "score": 40,
+        "veredicto": "FAIL",
+        "crop_image": "./jardines-de-analco/crops/Distrito 10 - Jardines de Analco_img_0002_crop_03.jpg"
+      }
+    },
+    {
+      "location": "Ramos Arizpe",
+      "location_slug": "ramos-arizpe",
+      "relative_url": "./ramos-arizpe/",
+      "average_score": 70.59,
+      "total_pizzas": 538,
+      "pass_count": 403,
+      "fail_count": 135,
+      "burbuja_count": 103,
+      "grasa_count": 63,
+      "bordes_count": 463,
+      "best_item": {
+        "score": 90,
+        "veredicto": "PASS",
+        "crop_image": "./ramos-arizpe/crops/Distrito 10 - Ramos Arizpe_img_0328_crop_01.jpg"
+      },
+      "worst_item": {
+        "score": 15,
+        "veredicto": "FAIL",
+        "crop_image": "./ramos-arizpe/crops/Distrito 10 - Ramos Arizpe_img_0041_crop_01.jpg"
+      }
+    },
+    {
+      "location": "Florida",
+      "location_slug": "florida",
+      "relative_url": "./florida/",
+      "average_score": 70.44,
+      "total_pizzas": 540,
+      "pass_count": 412,
+      "fail_count": 128,
+      "burbuja_count": 43,
+      "grasa_count": 225,
+      "bordes_count": 288,
+      "best_item": {
+        "score": 90,
+        "veredicto": "PASS",
+        "crop_image": "./florida/crops/Distrito 10 - Florida_img_0205_crop_01.jpg"
+      },
+      "worst_item": {
+        "score": 15,
+        "veredicto": "FAIL",
+        "crop_image": "./florida/crops/Distrito 10 - Florida_img_0154_crop_02.jpg"
+      }
+    },
+    {
+      "location": "Club De Leones",
+      "location_slug": "club-de-leones",
+      "relative_url": "./club-de-leones/",
+      "average_score": 67.94,
+      "total_pizzas": 586,
+      "pass_count": 402,
+      "fail_count": 184,
+      "burbuja_count": 134,
+      "grasa_count": 311,
+      "bordes_count": 426,
+      "best_item": {
+        "score": 90,
+        "veredicto": "PASS",
+        "crop_image": "./club-de-leones/crops/Distrito 10 - Club de Leones_img_0289_crop_02.jpg"
+      },
+      "worst_item": {
+        "score": 15,
+        "veredicto": "FAIL",
+        "crop_image": "./club-de-leones/crops/Distrito 10 - Club de Leones_img_0314_crop_01.jpg"
+      }
+    },
+    {
+      "location": "Mirasierra",
+      "location_slug": "mirasierra",
+      "relative_url": "./mirasierra/",
+      "average_score": 67.8,
+      "total_pizzas": 617,
+      "pass_count": 423,
+      "fail_count": 194,
+      "burbuja_count": 115,
+      "grasa_count": 216,
+      "bordes_count": 353,
+      "best_item": {
+        "score": 90,
+        "veredicto": "PASS",
+        "crop_image": "./mirasierra/crops/Distrito 10 - Mirasierra_img_0364_crop_02.jpg"
+      },
+      "worst_item": {
+        "score": 15,
+        "veredicto": "FAIL",
+        "crop_image": "./mirasierra/crops/Distrito 10 - Mirasierra_img_0014_crop_02.jpg"
+      }
+    },
+    {
+      "location": "Otilio",
+      "location_slug": "otilio",
+      "relative_url": "./otilio/",
+      "average_score": 65.13,
+      "total_pizzas": 157,
+      "pass_count": 83,
+      "fail_count": 74,
+      "burbuja_count": 24,
+      "grasa_count": 40,
+      "bordes_count": 60,
+      "best_item": {
+        "score": 85,
+        "veredicto": "PASS",
+        "crop_image": "./otilio/crops/Distrito 10 - Otilio_img_0178_crop_01.jpg"
+      },
+      "worst_item": {
+        "score": 15,
+        "veredicto": "FAIL",
+        "crop_image": "./otilio/crops/Distrito 10 - Otilio_img_0006_crop_02.jpg"
+      }
+    },
+    {
+      "location": "Maravillas",
+      "location_slug": "maravillas",
+      "relative_url": "./maravillas/",
+      "average_score": 64.56,
+      "total_pizzas": 421,
+      "pass_count": 264,
+      "fail_count": 157,
+      "burbuja_count": 126,
+      "grasa_count": 260,
+      "bordes_count": 247,
+      "best_item": {
+        "score": 90,
+        "veredicto": "PASS",
+        "crop_image": "./maravillas/crops/Distrito 10 - Maravillas_img_0151_crop_02.jpg"
+      },
+      "worst_item": {
+        "score": 15,
+        "veredicto": "FAIL",
+        "crop_image": "./maravillas/crops/Distrito 10 - Maravillas_img_0068_crop_01.jpg"
+      }
+    },
+    {
+      "location": "Zaragoza",
+      "location_slug": "zaragoza",
+      "relative_url": "./zaragoza/",
+      "average_score": 62.18,
+      "total_pizzas": 377,
+      "pass_count": 175,
+      "fail_count": 202,
+      "burbuja_count": 102,
+      "grasa_count": 64,
+      "bordes_count": 169,
+      "best_item": {
+        "score": 90,
+        "veredicto": "PASS",
+        "crop_image": "./zaragoza/crops/Distrito 10 - Zaragoza_img_0125_crop_01.jpg"
+      },
+      "worst_item": {
+        "score": 20,
+        "veredicto": "FAIL",
+        "crop_image": "./zaragoza/crops/Distrito 10 - Zaragoza_img_0060_crop_01.jpg"
+      }
+    },
+    {
+      "location": "San RamóN",
+      "location_slug": "san-ramo-n",
+      "relative_url": "./san-ramo-n/",
+      "average_score": 61.29,
+      "total_pizzas": 291,
+      "pass_count": 171,
+      "fail_count": 120,
+      "burbuja_count": 77,
+      "grasa_count": 21,
+      "bordes_count": 269,
+      "best_item": {
+        "score": 85,
+        "veredicto": "PASS",
+        "crop_image": "./san-ramo-n/crops/Distrito 10 - San Ramón_img_0189_crop_03.jpg"
+      },
+      "worst_item": {
+        "score": 15,
+        "veredicto": "FAIL",
+        "crop_image": "./san-ramo-n/crops/Distrito 10 - San Ramón_img_0116_crop_02.jpg"
+      }
+    }
+  ]
+}

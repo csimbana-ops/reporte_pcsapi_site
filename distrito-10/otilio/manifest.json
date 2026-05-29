@@ -1,0 +1,9 @@
+{
+  "datasets": [
+    {
+      "csv_name": "Distrito 10 - Otilio.csv",
+      "detailed_json": "./json/detailed.json",
+      "ranking_json": "./json/ranking.json"
+    }
+  ]
+}

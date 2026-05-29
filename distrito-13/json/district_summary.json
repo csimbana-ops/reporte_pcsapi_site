@@ -1,0 +1,13 @@
+{
+  "company": "PCSAPI",
+  "district_slug": "distrito-13",
+  "display_name": "Distrito 13",
+  "total_locations": 1,
+  "total_pizzas": 500,
+  "average_score": 71.1,
+  "pass_count": 391,
+  "fail_count": 109,
+  "burbuja_count": 58,
+  "grasa_count": 2,
+  "bordes_count": 432
+}

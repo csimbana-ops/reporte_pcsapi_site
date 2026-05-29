@@ -1,0 +1,48 @@
+{
+  "locations": [
+    {
+      "location": "Sun Mall",
+      "location_slug": "sun-mall",
+      "relative_url": "./sun-mall/",
+      "average_score": 71.83,
+      "total_pizzas": 268,
+      "pass_count": 205,
+      "fail_count": 63,
+      "burbuja_count": 14,
+      "grasa_count": 0,
+      "bordes_count": 212,
+      "best_item": {
+        "score": 90,
+        "veredicto": "PASS",
+        "crop_image": "./sun-mall/crops/Distrito 07 - Sun Mall_img_0054_crop_01.jpg"
+      },
+      "worst_item": {
+        "score": 20,
+        "veredicto": "FAIL",
+        "crop_image": "./sun-mall/crops/Distrito 07 - Sun Mall_img_0002_crop_01.jpg"
+      }
+    },
+    {
+      "location": "Pablo Livas",
+      "location_slug": "pablo-livas",
+      "relative_url": "./pablo-livas/",
+      "average_score": 69.0,
+      "total_pizzas": 206,
+      "pass_count": 151,
+      "fail_count": 55,
+      "burbuja_count": 19,
+      "grasa_count": 122,
+      "bordes_count": 46,
+      "best_item": {
+        "score": 85,
+        "veredicto": "PASS",
+        "crop_image": "./pablo-livas/crops/Distrito 07 - Pablo Livas_img_0193_crop_02.jpg"
+      },
+      "worst_item": {
+        "score": 15,
+        "veredicto": "FAIL",
+        "crop_image": "./pablo-livas/crops/Distrito 07 - Pablo Livas_img_0076_crop_01.jpg"
+      }
+    }
+  ]
+}

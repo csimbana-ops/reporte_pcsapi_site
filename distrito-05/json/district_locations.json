@@ -1,0 +1,26 @@
+{
+  "locations": [
+    {
+      "location": "Molino",
+      "location_slug": "molino",
+      "relative_url": "./molino/",
+      "average_score": 60.4,
+      "total_pizzas": 265,
+      "pass_count": 98,
+      "fail_count": 167,
+      "burbuja_count": 21,
+      "grasa_count": 209,
+      "bordes_count": 84,
+      "best_item": {
+        "score": 85,
+        "veredicto": "PASS",
+        "crop_image": "./molino/crops/Distrito 05 - Molino_img_0145_crop_01.jpg"
+      },
+      "worst_item": {
+        "score": 15,
+        "veredicto": "FAIL",
+        "crop_image": "./molino/crops/Distrito 05 - Molino_img_0011_crop_01.jpg"
+      }
+    }
+  ]
+}

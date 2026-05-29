@@ -1,0 +1,13 @@
+{
+  "company": "PCSAPI",
+  "district_slug": "distrito-10",
+  "display_name": "Distrito 10",
+  "total_locations": 9,
+  "total_pizzas": 3586,
+  "average_score": 66.82,
+  "pass_count": 2378,
+  "fail_count": 1208,
+  "burbuja_count": 727,
+  "grasa_count": 1222,
+  "bordes_count": 2299
+}

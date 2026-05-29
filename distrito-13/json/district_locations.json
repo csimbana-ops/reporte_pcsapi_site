@@ -1,0 +1,26 @@
+{
+  "locations": [
+    {
+      "location": "Cardenas",
+      "location_slug": "cardenas",
+      "relative_url": "./cardenas/",
+      "average_score": 71.1,
+      "total_pizzas": 500,
+      "pass_count": 391,
+      "fail_count": 109,
+      "burbuja_count": 58,
+      "grasa_count": 2,
+      "bordes_count": 432,
+      "best_item": {
+        "score": 85,
+        "veredicto": "PASS",
+        "crop_image": "./cardenas/crops/Distrito 13 - Cardenas_img_0409_crop_01.jpg"
+      },
+      "worst_item": {
+        "score": 15,
+        "veredicto": "FAIL",
+        "crop_image": "./cardenas/crops/Distrito 13 - Cardenas_img_0364_crop_01.jpg"
+      }
+    }
+  ]
+}
